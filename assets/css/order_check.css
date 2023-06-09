@@ -1,0 +1,96 @@
+.order_container{
+    width: 100%;
+    height: auto;
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.order_container h2{
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+.order_container .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    border-bottom: 2px solid black;
+    width:75%;  
+    padding: 10px 0 10px 0;
+}
+.order_container .row .title{
+    font-weight: bold;
+}
+.order_container .row p{
+    padding-top: 10px;
+    width: 40px;
+    text-align: center;
+}
+.order_container .item, .title_item{
+    width: 300px;
+}
+.order_container .item_detail{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row; 
+    width: 700px;
+    padding-right: 10px; 
+}
+.order_container .item{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: row;
+}
+.order_container .title_item{
+    padding: 0 50px;
+}
+.order_container .item img{
+    width: 90px;
+    height: 90px;
+    border-radius: 10%;
+}
+.order_container .item .product_name{
+    margin-left: 10px;
+}
+.order_container .item .product_name p{
+    width: 150px;
+    text-align: left;
+    cursor: pointer;
+}
+.order_container .item .product_name p:hover{
+ font-size: larger;
+ font-weight: bold;
+ color: #E07A5F;
+ transition: 0.5s;   
+    
+}
+.total {
+    width: 75%;
+    height: 95px;
+    margin-top: 20px;
+}
+.total .total_price{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    flex-direction: row;
+}
+.total .total_price p{
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 30px;
+}
+.total .shipping p{
+    text-align: right;
+}
+.topay-btn .btn{
+    width: 270px;
+    margin-bottom: 100px;
+    background-color: #3D405B;
+}
+ 

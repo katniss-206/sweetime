@@ -1,0 +1,43 @@
+.fqa {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+    position: relative;
+}
+
+.bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+}
+.content {
+    position: absolute;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    font-weight: bold;
+}
+
+.black {
+    margin: 5% 15% 5% 15%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+footer {
+    width: 100%;
+    background-color: #ccc;
+    text-align: center;
+}
+
+.txt {
+    font-size: 15px;
+    padding: 10px 50px;
+}

@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.m_information {
+    width: 35%;
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.m_information h2{
+    font-weight: bold;
+}
+.center {
+    font-family: 微軟正黑體 ;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.m_information .title {
+    font-size: 36px;
+    font-family: 微軟正黑體 bold;
+    text-align: center;
+    font-weight: bolder;
+    margin: 20px;
+}
+
+.m_information input {
+    height: 40px;
+    width: 100%;
+    margin: 0 0 10px 0;
+    padding: 5px 15px;
+    border: 1px black solid;
+    border-radius: 5px;
+    font-size: 18px;
+
+}
+
+.m_information .mation {
+    margin: 0;
+}
+
+.m_information select {
+    height: 40px;
+    width: 100%;
+    margin: 5px 0;
+    padding: 5px 15px;
+    border: 1px black solid;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.m_information h2 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.m_information form {
+    width: 100%;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.m_information .m_center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.m_information .space {
+    margin: 5%;
+    width: 50%;
+
+}
+
+
+.m_information .space input {
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    background-color: #3D405B;
+    color: white;
+}

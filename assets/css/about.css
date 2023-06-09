@@ -1,0 +1,109 @@
+.about{
+    margin-top: 150px;
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+}
+
+main {
+    padding: 0;
+    margin: 0;
+    font-family: 微軟正黑體 Light;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.about .frontline {
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 0 20px;
+    position: relative;
+    font-size: 20px;
+}
+.frontline h2{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.about section {
+    padding: 0;
+    font-family: 微軟正黑體 Light;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutus {
+    margin: 20px;
+    border-radius: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+.imgcard img {
+    border-radius: 25px;
+    width: 300px;
+    height: 435px;
+}
+
+.imgcard {
+    width: 300px;
+    height: 435px;
+    border-radius: 25px;
+}
+
+.aboutus .text {
+    width: 300px;
+    height: 435px;
+    border-radius: 25px;
+    padding: 50px 30px;
+    font-size: 20px;
+    background-color: rgb(136, 136, 136);
+    color: white;
+    opacity: 0;
+    transition: 0.5s;
+    display: flex;
+    position: absolute;
+}
+
+.aboutus .text .contact {
+    position: absolute;
+    width: 150px;
+    height: 40px;
+    bottom: 0;
+    right: 0;
+}
+
+.contact img {
+    width: 40px;
+    padding-left: 10px;
+}
+
+.about .text:hover {
+    opacity: 0.8;
+}
+
+.aboutus .name {
+    margin-top: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.aboutus .name:hover{
+    color: #E07A5F;
+    font-weight: bolder;
+    font-size: 25px;
+    transition: 0.5s;

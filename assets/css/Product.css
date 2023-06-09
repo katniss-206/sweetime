@@ -1,0 +1,109 @@
+.product_container {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: flex-start;
+   width: 90%;
+}
+.aside {
+    padding: 20px;
+    margin: 230px 50px 50px 100px;
+    float: left;
+    width: 15%;
+}
+.aside .list-group{
+    width: 200PX;
+}
+.array {
+    width: 100%;
+    display: flex;
+}
+
+.article {
+    margin-top: 130px;
+    float: right;
+    width: 75%;
+}
+
+.article h3 a{
+    font-weight: bold;
+    border-right: 3px solid black ;
+    padding-right: 10px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+.article .Mangoo a:hover{
+    color:#f7b347;
+    border-right:3px solid #f7b347;
+    font-size: larger;
+    transition: 0.5s;
+}
+.article .Teaa a:hover{
+    color:#81B29A;
+    border-right:3px solid #81B29A;
+    font-size: larger;
+    transition: 0.5s;
+}
+.article .Chocoo a:hover{
+    color:#8A817C;
+    border-right:3px solid #8A817C;
+    font-size: larger;
+    transition: 0.5s;
+}
+.article .Addd a:hover{
+    color:#E07A5F;
+    border-right:3px solid #E07A5F;
+    font-size: larger;
+    transition: 0.5s;
+}
+
+.array1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    /*border: 1px solid black;*/
+}
+/*更動class name*/
+.display_card {
+  /*order: 1px solid black;*/
+  width: 240px;
+
+}
+
+.card_img img{
+    width: 100%;
+    border-radius: 5%;
+}
+.card_text {
+    text-align: center;
+    margin-top: 20px;
+}
+.card_text h3{
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.array1.Mango .card_text h3:hover{
+    color: #f7b347;
+}
+.array1.Tea .card_text h3:hover{
+    color: #81B29A;
+}
+.array1.choco .card_text h3:hover{
+    color: #8A817C;
+}
+.array1.Add .card_text h3:hover{
+    color: #E07A5F;
+}
+
+
+.clearfix {
+    clear: both;
+}
+
+.footer {
+    width: 100%;
+    padding: 30px;
+    background-color: #ccc;
+}

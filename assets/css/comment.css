@@ -1,0 +1,47 @@
+.comment_history {
+    width: 100%;
+    height: auto;
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 180px;
+}
+
+.comment_history h2 {
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.list {
+    font-size: 26px;
+    width: 80%;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    padding: 0 50px;
+}
+
+th {
+    font-size: 18px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid black;
+}
+.star{
+    color: #ffca18;
+
+}
+
+td {
+    font-size: 20px;
+    padding: 20px;
+}
+td:hover{
+    color: #E07A5F;
+    font-weight: bold;
+}

@@ -1,0 +1,114 @@
+.fillin {
+    margin-top: 130px;
+    width: 50%;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px;
+}
+
+.sender,
+.recipient {
+    border: 1px solid black;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+h2 {
+    margin: 20px;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fillin p {
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+
+.information input,
+.information select {
+    border-radius: 5px;
+    height: 30px;
+    width: 300px;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.information textarea {
+    box-sizing: border-box;
+    resize: none;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+input[type=checkbox] {
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 18px;
+    height: 18px;
+    border-radius: 0px;
+    position: relative;
+}
+
+input[type=checkbox]:after {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 0;
+    content: "";
+    background-color: white;
+    display: inline-block;
+    visibility: visible;
+    padding: 0px;
+    border-radius: 0px;
+    border: 1px solid black;
+}
+
+input[type=checkbox]:checked:after {
+    content: "✓";
+    background-color: #666;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+}
+
+.checkbox p {
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+}
+
+.flex input {
+    width: 300px;
+    padding: 5px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: #3D405B;
+    color: white;
+    cursor: pointer;
+}

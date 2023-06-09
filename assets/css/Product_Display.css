@@ -1,0 +1,344 @@
+main{
+  width: 70%;
+  margin-top: 180px;
+}
+.detail_container{
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    height: auto;
+}
+.detail_container img{
+    height: 380px;
+    width: 380px;
+    margin: 0 20px;
+}
+.detail_container form{
+  height: 380px;
+  width: 500px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 20px;
+}
+.detail_container form h2{
+ /*   font-size: ;*/
+    margin-bottom: 10px;
+    cursor: pointer;
+
+}
+.detail_container form .Text{
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.detail_container form .price{
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    color: #E07A5F;
+    cursor: pointer;
+}
+.size_container p{
+    margin-bottom: 10px;
+}
+/*size*/
+.size_container{
+  margin-top: 20px;
+}
+.size_container.container {
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    height: 100px;
+    padding: 0;
+  }
+  
+  .radio-tile-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .radio-tile label{
+    margin: 0;
+  }
+  .input-container {
+    position: relative;
+    height: 35px;
+    width: 80px;
+    margin: 0 10px 0 0 ;
+  }
+  .input-container input {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    cursor: pointer;
+    z-index: 1;
+    opacity: 0;
+  }
+  
+  .input-container .radio-tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    border-radius: 10%;
+    border: 2px solid #81B29A;
+    border-radius: 8px;
+    background-color: #81b29a00;
+  }
+
+  .input-container label {
+    color: #81B29A;
+    font-size: 0.80rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+  }
+  .input-container label:hover{
+    color: white;
+  }
+  
+  input:hover+.radio-tile {
+    box-shadow: 0 0 12px rgba(16, 0, 0, 0.189);
+    background-color: #f4f1de82;
+  }
+ 
+  /*num setting*/
+  
+  .detail_container form .container{
+    padding: 0;
+  }
+  .detail_container form .container .row{
+    margin: 20px 0 0 0;
+  }
+  .detail_container .container .row .input-group{
+    padding: 0;
+    margin-top: 20px;
+
+  }
+  .input-group button{
+    border: 1px solid #3D405B;
+  }
+  .input-group .btn{
+    z-index: 1;
+  }
+  .input-group input{
+    border: 1px solid #3D405B;
+    width: 150px;
+  }
+
+
+  /*.cake_num_btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*border: 1px solid black;
+    padding: 0 30px;
+    width: 360px;
+    position: absolute;
+    bottom: 40px;
+}
+.cake_num .btn{
+    width: 120px;
+    height: 30px;
+    padding: 0;
+    font-size: 10px;
+    color: black;
+    font-weight: bold;
+    font-family: "微軟正黑體";
+    background-color: white;
+    border:1px solid #81B29A;
+}*/
+/*結帳按鈕*/
+.checkout{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*border: 1px solid black;*/
+  padding: 0 30px 0 0;
+  margin-top: 20px;
+  width: 380px;
+  bottom: 40px;
+}
+.checkout .btn{
+  width: 160px;
+  height: 35px;
+  padding: 0;
+  font-size: 10px;
+  font-weight: bold;
+  font-family: "微軟正黑體";
+  background-color: #3D405B;
+}
+/*商品介紹*/
+.intro_container{
+  padding-top: 20px;
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+}
+.intro_container h4{
+  width: 110px;
+  font-family: "微軟正黑體";
+  font-weight: bold;
+  border-right: 3px solid black;
+}
+.intro_container h4:hover{
+  width: 130px;
+  font-size: 30px;
+  color: #E07A5F;
+  border-right: 3px solid #E07A5F;
+  transition: 0.5s;
+}
+.intro_container p{
+  margin-top: 40px;
+  padding: 0 10px;
+}
+/*留言板*/
+.border_items{
+  margin-top: 50px;
+}
+.border_items h4{
+  width: 110px;
+  font-family: "微軟正黑體";
+  font-weight: bold;
+  border-right: 3px solid black;
+  cursor: pointer;
+}
+.border_items h4:hover{
+  width: 130px;
+  font-size: 30px;
+  color: #E07A5F;
+  border-right: 3px solid #E07A5F;
+  transition: 0.5s;
+}
+hr{
+    border: 1px solid #E07A5F;
+}
+.board {
+  display: flex;
+  width: 100%;
+  border: none;
+}
+.comment,
+.review {
+    margin: 20px;
+}
+/*評論區*/
+.comment {
+    padding: 20px;
+    width: 50%;
+}
+
+.box {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px black solid;
+}
+
+.box p {
+    margin-bottom: 5px;
+}
+/*留言區*/
+.review  {
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.review form {
+  width: 100%;
+  height: 100%;
+}
+.review  .wrap{
+  background-color: #3d405b12;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+.review .flex {
+    margin-top: 15px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.m_name {
+    font-size: 20px;
+    padding-left: 10px;
+}
+/*星等*/
+.score {
+    display: inline-flex;
+    flex-direction: row-reverse;
+    font-size: 30px;
+    padding-right: 10px;
+}
+
+.score label {
+    user-select: none;
+}
+
+.score label::after {
+    content: '★';
+    color: #666;
+}
+
+.score label:hover {
+    cursor: pointer;
+}
+
+.score label:hover::after {
+    content: '★';
+    color: #ffca18;
+}
+
+.score label:hover~label::after {
+    content: '★';
+    color: #ffca18;
+}
+
+.score input {
+    display: none;
+}
+
+.score input:checked+label::after {
+    content: '★';
+    color: #ffca18;
+}
+
+.score input:checked~label::after {
+    content: '★';
+    color: #ffca18;
+}
+/*評論輸入框*/
+.review_input textarea {
+    box-sizing: border-box;
+    resize: none;
+    height: 300px;
+    padding: 15px;
+    width: 100%;
+    font-size: 18px;
+    border: 2px gray solid;
+    border-radius: 5px;
+}
+
+.right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.right input {
+    color: white;
+    background-color: #3D405B;
+    border-radius: 10%;
+    padding: 5px;
+    margin: 20px 0 0 20px;
+    width: 60px;
+}

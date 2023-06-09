@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/css/header.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/about.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/footer.css" />
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css" />
+    <link rel="icon" href="assets/img/icon/cake 02.png" />
+    <title>點心食光</title>
+  </head>
+  <body>
+    <!--Header Section-->
+    <header>
+      <!--選單-->
+      <div class="navbar_01">
+        <ul>
+          <li><a href="index.html" class="Pages">品牌理念 </a></li>
+          <li>
+            <a href="Product.html " class="Pages">商品分類</a>
+            <div class="dropdown_menu">
+              <ul>
+                <li><a href="Product.html#Mango">芒果季</a></li>
+                <li><a href="Product.html#Tea">茶香系列</a></li>
+                <li><a href="Product.html#Chocolate">巧克力系列</a></li>
+                <li><a href="Product.html#add">加購項目</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="index.html" style="margin: 0"><img src="assets/img/Element/logo.jpg" /></a>
+          </li>
+          <li><a href="about.html" class="Pages">關於我們</a></li>
+          <li><a href="FAQ.html" class="Pages">常見問題</a></li>
+        </ul>
+      </div>
+      <div class="icons_01">
+        <div class="search_item" id="search_btn">
+          <i class="fi fi-rr-search"></i>
+        </div>
+        <div class="shopping_cart" id="cart_btn">
+          <i class="fi fi-rr-shopping-cart"></i>
+        </div>
+        <div class="login_window" id="login_btn">
+          <i class="fi fi-rr-user"></i>
+        </div>
+      </div>
+      <!--會員中心選單-->
+      <!--<div class="center-menu">
+            <div class="pack">
+              <a href="m_information.html"><button type="button" class="btn btn-secondary" id="m_information">會員資料</button></a>
+              <a href="order_check.html"><button type="button" class="btn btn-secondary" id="order_check">訂單確認</button></a>
+              <a href="order_history.html"><button type="button" class="btn btn-secondary" id="order_history">訂單紀錄</button></a>
+              <a href="comment.html"><button type="button" class="btn btn-secondary" id="comment">歷史評論</button></a>
+              <a href="index.html"><button type="button" class="btn btn-secondary" id="log_out">登出</button></a>
+            </div>
+          </div>-->
+
+      <!--搜尋欄-->
+      <div class="container-fluid">
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-outline-success" type="submit">搜尋</button>
+        </form>
+      </div>
+    </header>
+
+    <!--login視窗-->
+    <div class="wrapper">
+      <span class="icon-close">
+        <i class="fi fi-br-cross"></i>
+      </span>
+      <!--登入-->
+      <div class="memberlog login">
+        <h1>會員登入</h1>
+        <form method="post" action="#">
+          <p>帳號</p>
+          <input type="text" style="width: 100%" />
+          <p>密碼</p>
+          <input type="password" style="width: 100%" />
+          <p style="margin-top: 10px"><input type="submit" class="login-btn" value="登入" style="width: 100%" /></p>
+        </form>
+        <!--連到註冊畫面-->
+        <a href="#" class="register-link"><p class="space">尚未註冊會員?</p></a>
+      </div>
+      <!--註冊-->
+      <div class="memberlog register">
+        <h1>會員註冊</h1>
+        <form method="post" action="#">
+          <div class="name-gender">
+            <div class="wrap">
+              <p>姓名*</p>
+              <input type="text" style="width: 100%" required="required" />
+            </div>
+            <div class="wrap">
+              <p>性別*</p>
+              <select name="gender" style="width: 100%" required="required">
+                <option value="男">男</option>
+                <option value="女">女</option>
+              </select>
+            </div>
+          </div>
+          <p>電子郵件*</p>
+          <input type="email" style="width: 100%" required="required" />
+          <p>手機*</p>
+          <input type="tel" style="width: 100%" required="required" />
+          <p>生日*</p>
+          <input type="date" style="width: 100%" required="required" />
+          <p>帳號*</p>
+          <input type="text" style="width: 100%" required="required" />
+          <p>密碼*</p>
+          <input type="password" style="width: 100%" required="required" />
+          <p style="margin-top: 10px"><input type="submit" class="register-btn" value="加入會員" style="width: 100%" /></p>
+        </form>
+        <!--連到登入頁面-->
+        <p class="space">我已經有會員帳號了!&nbsp<a href="#" class="login-link">回登入頁面</a></p>
+        <p class="space">註冊表示同意商店服務條款 與 會員責任規範擊個資聲明</p>
+      </div>
+    </div>
+    <!--購物車-->
+    <form method="post" action="">
+      <div class="cart_container">
+        <h4>購物車</h4>
+        <!--品項1-->
+        <div class="cart_item">
+          <!--後端接資料庫-->
+          <img src="assets/img/Product/Mango/Chiffon.jpg" />
+          <div class="card_detail">
+            <h6>商品名稱</h6>
+            <!--選擇尺寸-->
+            <select class="size_select" size="1" name="cake_size">
+              <option>單片</option>
+              <option>4吋</option>
+              <option>6吋</option>
+            </select>
+            <!--數量增減-->
+            <div class="container">
+              <div class="row">
+                <div class="input-group mb-3">
+                  <button class="btn btn-outline-secondary" type="button" id="button-addon1" onclick="minus(0)">-</button>
+                  <input type="text" value="1" class="input_num text-center" />
+                  <button class="btn btn-outline-secondary" type="button" id="button-addon1" onclick="add(0)">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="price"><p>$560</p></div>
+        </div>
+        <!--品項2-->
+        <div class="cart_item">
+          <!--後端接資料庫-->
+          <img src="assets/img/Product/Mango/Chiffon.jpg" />
+          <div class="card_detail">
+            <h6>商品名稱</h6>
+            <!--選擇尺寸-->
+            <select class="size_select" size="1" name="cake_size">
+              <option>單片</option>
+              <option>4吋</option>
+              <option>6吋</option>
+            </select>
+            <!--數量增減-->
+            <div class="container">
+              <div class="row">
+                <div class="input-group mb-3">
+                  <button class="btn btn-outline-secondary" type="button" id="button-addon1" onclick="minus(0)">-</button>
+                  <input type="text" value="1" class="input_num text-center" />
+                  <button class="btn btn-outline-secondary" type="button" id="button-addon1" onclick="add(0)">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="price"><p>$560</p></div>
+        </div>
+        <!--品項3-->
+        <div class="cart_item">
+          <!--後端接資料庫-->
+          <img src="assets/img/Product/Mango/Chiffon.jpg" />
+          <div class="card_detail">
+            <h6>商品名稱</h6>
+            <!--選擇尺寸-->
+            <select class="size_select" size="1" name="cake_size">
+              <option>單片</option>
+              <option>4吋</option>
+              <option>6吋</option>
+            </select>
+            <!--數量增減-->
+            <div class="container">
+              <div class="row">
+                <div class="input-group mb-3">
+                  <button class="btn btn-outline-secondary" type="button" id="button-addon1" onclick="minus(0)">-</button>
+                  <input type="text" value="1" class="input_num text-center" />
+                  <button class="btn btn-outline-secondary" type="button" id="button-addon1" onclick="add(0)">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="price"><p>$560</p></div>
+        </div>
+        <!--品項4-->
+        <div class="cart_item">
+          <!--後端接資料庫-->
+          <img src="assets/img/Product/Mango/Chiffon.jpg" />
+          <div class="card_detail">
+            <h6>商品名稱</h6>
+            <!--選擇尺寸-->
+            <select class="size_select" size="1" name="cake_size">
+              <option>單片</option>
+              <option>4吋</option>
+              <option>6吋</option>
+            </select>
+            <!--數量增減-->
+            <div class="container">
+              <div class="row">
+                <div class="input-group mb-3">
+                  <button class="btn btn-outline-secondary" type="button" id="button-addon1" onclick="minus(0)">-</button>
+                  <input type="text" value="1" class="input_num text-center" />
+                  <button class="btn btn-outline-secondary" type="button" id="button-addon1" onclick="add(0)">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="price"><p>$560</p></div>
+        </div>
+        <div class="total_cost">
+          <p>總計:$1050</p>
+        </div>
+        <div class="checkout_btn">
+          <a href=""><button type="button" class="btn btn-secondary" id="leave-btn">繼續購物</button></a>
+          <a href="order_check.html"><button type="button" class="btn btn-secondary">前往結帳</button></a>
+        </div>
+      </div>
+    </form>
+    <!--數量增減-->
+    <script>
+      function minus(ctn_num) {
+        var num = Number(document.getElementsByClassName("input_num")[ctn_num].value);
+        if (num > 1) {
+          document.getElementsByClassName("input_num")[ctn_num].value = num - 1;
+        }
+      }
+      function add(ctn_num) {
+        var num = Number(document.getElementsByClassName("input_num")[ctn_num].value);
+        if (num < 100) {
+          document.getElementsByClassName("input_num")[ctn_num].value = num + 1;
+        }
+      }
+    </script>
+    <!--Header Section Over-->
+
+    <!--ABOUT US-->
+    <div class="about">
+      <div class="frontline">
+        <h2>前端人員</h2>
+      </div>
+      <main>
+        <table>
+          <td>
+            <div class="aboutus">
+              <div class="box">
+                <div class="imgcard">
+                  <img src="assets/img/photo_11044205.jpg" />
+                </div>
+                <div class="text">
+                  <p>
+                    製作前端是一個有趣且具有挑戰性的過程。通過不斷的學習與實踐，不僅提升自己的技術，還加深了對設計的了解。我期待著繼續在前端開發的領域中成長與探索。
+                  </p>
+                  <div class="contact">
+                    <a href="https://www.facebook.com/profile.php?id=100012136151133" target="blink"
+                      ><img src="assets/img/icon/fb.png"
+                    /></a>
+                    <a href="https://www.instagram.com/hihi_0912/" target="blink"><img src="assets/img/icon/ig.png" /></a>
+                    <a href="mailto:ella910912@gmai.com"><img src="assets/img/icon/gmail.png" /></a>
+                  </div>
+                </div>
+                <p class="name">陳思妤</p>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="aboutus">
+              <div class="box">
+                <div class="imgcard">
+                  <img src="assets/img/photo_11044232.jpg" />
+                </div>
+                <div class="text">
+                  <p>
+                    在畫草稿的時候總是想得很美好，但是等到真正要執行出來的時候卻做不出來，就算做出來又有可能位置不是我們所想要的，然後就又要一波大修改，只不過這學期真的學到了很多有關寫網頁的技巧，讓我覺得前端非常有趣且實用。
+                  </p>
+                  <div class="contact">
+                    <a href="https://www.facebook.com/profile.php?id=100007268384914" target="blink"
+                      ><img src="assets/img/icon/fb.png"
+                    /></a>
+                    <a href="https://www.instagram.com/hua_eweee/" target="blink"><img src="assets/img/icon/ig.png" /></a>
+                    <a href="mailto:yhc45975252@gmail.com"><img src="assets/img/icon/gmail.png" /></a>
+                  </div>
+                </div>
+                <p class="name">張宜樺</p>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="aboutus">
+              <div class="box">
+                <div class="imgcard">
+                  <img src="assets/img/photo_11044259.jpg" />
+                </div>
+                <div class="text">
+                  <p>
+                    這次期末專題不但讓我更熟悉前端程式，也有額外機會學會使用不同的輔助工具。儘管前端常常因為跑版讓人崩潰，但看著網頁從無到有，一點一點的把預想畫面實體化就很有成就感。
+                  </p>
+                  <div class="contact">
+                    <a href="https://www.facebook.com/su.kathy.54" target="blink"><img src="assets/img/icon/fb.png" /></a>
+                    <a href="https://www.instagram.com/katniss_206/" target="blink"><img src="assets/img/icon/ig.png" /></a>
+                    <a href="mailto:K062703@gmail.com"><img src="assets/img/icon/gmail.png" /></a>
+                  </div>
+                </div>
+                <p class="name">蘇莉凱</p>
+              </div>
+            </div>
+          </td>
+        </table>
+      </main>
+      <section>
+        <div class="frontline">
+          <h2>後端人員</h2>
+        </div>
+      </section>
+      <main>
+        <table>
+          <td>
+            <div class="aboutus">
+              <div class="box">
+                <div class="imgcard">
+                  <img src="assets/img/photo_11044109.jpg" />
+                </div>
+                <div class="text">
+                  <p>
+                    這學期換成做後端，要跟資料庫做連結，邏輯不好的話就會鬼打牆，我就是邏輯死亡的類型，因此後端對我來說好困難，不過也學到了很多東西!
+                  </p>
+                  <div class="contact">
+                    <a href="https://www.facebook.com/ling920415" target="blink"><img src="assets/img/icon/fb.png" /></a>
+                    <a href="https://www.instagram.com/ljl172_/" target="blink"><img src="assets/img/icon/ig.png" /></a>
+                    <a href="mailto:ling920415@gmail.com"><img src="assets/img/icon/gmail.png" /></a>
+                  </div>
+                </div>
+                <p class="name">李靖苓</p>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="aboutus">
+              <div class="box">
+                <div class="imgcard">
+                  <img src="assets/img/photo-11044156.png" />
+                </div>
+                <div class="text">
+                  <p>
+                    這次換我們甲班來負責後端的部分，對程式不是很擅長的我來說，後端真的好複雜、好難，但也是一次難得的經驗，讓我更了解一個網站的後端是要做些什麼。
+                  </p>
+                  <div class="contact">
+                    <a href="https://www.facebook.com/profile.php?id=100006741851456" target="blink"
+                      ><img src="assets/img/icon/fb.png"
+                    /></a>
+                    <a href="http://instagram.com/fish_10_13" target="blink"><img src="assets/img/icon/ig.png" /></a>
+                    <a href="mailto:a0979355027@gmail.com"><img src="assets/img/icon/gmail.png" /></a>
+                  </div>
+                </div>
+                <p class="name">林芷妤</p>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="aboutus">
+              <div class="box">
+                <div class="imgcard">
+                  <img src="assets/img/photo_11044135.jpg" />
+                </div>
+                <div class="text">
+                  <p>
+                    經歷過前端後發現後端是截然不同的領域，從這之中了解到一個網站的構成，不僅要有使用者所看見的漂亮排版，亦要有便於使用的功能，可說是受益良多。
+                  </p>
+                  <div class="contact">
+                    <a href="https://www.facebook.com/profile.php?id=100005785697510" target="blink"
+                      ><img src="assets/img/icon/fb.png"
+                    /></a>
+                    <a href="https://www.instagram.com/kuwuroni_/" target="blink"><img src="assets/img/icon/ig.png" /></a>
+                    <a href="mailto:yueluany@gmail.com"><img src="assets/img/icon/gmail.png" /></a>
+                  </div>
+                </div>
+                <p class="name">陳藝瑄</p>
+              </div>
+            </div>
+          </td>
+        </table>
+      </main>
+    </div>
+
+    <footer>
+      <p>網站瀏覽人次:1000人</p>
+      <p>Copyright © 2023 CYIM All Rights Reserved</p>
+    </footer>
+  </body>
+  <!--custom js file link-->
+  <script src="header.js"></script>
+  <script src="Mcenter_menu.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.1/dist/umd/popper.min.js"
+    integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
+    integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"
+  ></script>
+</html>
